@@ -52,7 +52,8 @@ public class BoardDAO {
 
 		if (rs.next()) {
 			boardDTO2 = new BoardDTO();
-
+			
+			boardDTO2.setBoardNo(rs.getLong("boardNo"));
 			boardDTO2.setTitle(rs.getString("title"));
 			boardDTO2.setContant(rs.getString("contant"));
 			boardDTO2.setUserName(rs.getString("userName"));
